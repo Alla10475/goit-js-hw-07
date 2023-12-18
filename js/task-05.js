@@ -11,5 +11,5 @@ function getRandomHexColor() {
 changeColorBtn.addEventListener('click', () => {
   const color = getRandomHexColor();
   bodyLink.style.backgroundColor = color;
-  spanText.textContent = `- ${color}`;
+  spanText.textContent = color;
 });

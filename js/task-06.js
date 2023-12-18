@@ -10,6 +10,8 @@ function getRandomHexColor() {
 }
 
 function createBoxes(amount) {
+  boxes.innerHTML = '';
+
   let step = 30;
 
   for (let i = 1; i <= amount; i++) {
@@ -24,7 +26,7 @@ function createBoxes(amount) {
 }
 
 createBtn.addEventListener('click', () => {
-  const inputNum = parseInt(input.value);
+  const inputNum = input.value;
   if (inputNum >= 1 && inputNum <= 100) {
     createBoxes(inputNum);
   } else {
@@ -36,5 +38,3 @@ createBtn.addEventListener('click', () => {
 destroyBtn.addEventListener('click', () => {
   boxes.innerHTML = '';
 });
-
-
